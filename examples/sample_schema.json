@@ -1,0 +1,1 @@
+{"columns": [{"name": "user_id", "type": "integer", "min": 1, "max": 10000}, {"name": "email", "type": "email"}, {"name": "name", "type": "name"}, {"name": "score", "type": "float", "min": 0.0, "max": 1.0}]}
