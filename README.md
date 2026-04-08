@@ -196,6 +196,19 @@ datamint tabular --schema schema.json --count 1000 --output data.csv
 - 🤝 [Contributing](CONTRIBUTING.md)
 - 🐛 [Issues](https://github.com/nirbhays/data-mint/issues)
 
+## Connect & Follow
+
+If you find this project useful, consider:
+
+- ⭐ **Starring** this repo to help others discover it
+- 🐛 **Opening issues** for bugs or feature requests
+- 🤝 **Contributing** — see [CONTRIBUTING.md](CONTRIBUTING.md)
+- 📝 [More articles](https://medium.com/@nirbhaysingh1)
+- 💼 **LinkedIn**: [Nirbhay Singh](https://www.linkedin.com/in/nirbhaysingh1/)
+- 🐙 **GitHub**: [@nirbhays](https://github.com/nirbhays)
+
+Built with ❤️ by [Nirbhay Singh](https://cloudtoai.in) — Cloud & AI Architect
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
