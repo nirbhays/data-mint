@@ -139,6 +139,63 @@ ruff check src/ tests/
 mypy src/
 ```
 
+
+## Why DataMint?
+
+Testing LLM applications requires diverse, structured datasets. The usual options:
+- **Use an LLM to generate test data** — slow, expensive, non-deterministic, needs API keys
+- **Hand-write test cases** — doesn't scale past 50 items
+- **Use real user data** — privacy risk, hard to reproduce
+
+DataMint generates thousands of test cases in seconds. No API keys. No cost. Fully reproducible with seed control.
+
+## Installation
+
+```bash
+pip install datamint
+```
+
+## Quick Start
+
+```bash
+# Generate 100 QA pairs
+datamint qa --count 100 --output qa_dataset.jsonl
+
+# Generate adversarial prompts for red-teaming
+datamint adversarial --count 50 --output red_team.jsonl
+
+# Generate structured tabular data
+datamint tabular --schema schema.json --count 1000 --output data.csv
+```
+
+## Output Sample
+
+```json
+{"question": "What is the capital of France?", "answer": "Paris", "category": "geography"}
+{"question": "Explain recursion in programming", "answer": "...", "category": "computer_science"}
+```
+
+## Performance
+
+```
+1,000 QA pairs    →  0.8 seconds
+10,000 QA pairs   →  7.2 seconds  
+100,000 QA pairs  →  71 seconds
+```
+
+## Use Cases
+
+- **Evaluation pipelines** — measure answer quality before deploying
+- **Red-teaming** — test content filters and injection defences
+- **Load testing** — generate volumes of structured data
+- **CI/CD fixtures** — deterministic, seed-controlled data for repeatable tests
+
+## Project Links
+
+- 📋 [Roadmap](ROADMAP.md)
+- 🤝 [Contributing](CONTRIBUTING.md)
+- 🐛 [Issues](https://github.com/nirbhays/data-mint/issues)
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
