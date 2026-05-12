@@ -43,6 +43,9 @@ dev = [
 [project.scripts]
 datamint = "datamint.cli:main"
 
+[project.entry-points.pytest11]
+datamint = "datamint.pytest_plugin"
+
 [project.urls]
 Homepage = "https://github.com/YOUR_ORG/datamint"
 Documentation = "https://github.com/YOUR_ORG/datamint/tree/main/docs"
