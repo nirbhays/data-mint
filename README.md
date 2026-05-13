@@ -108,6 +108,21 @@ tab = TabularGenerator(seed=42)
 rows = tab.generate(schema=schema, count=100)
 ```
 
+## Pytest Fixtures
+
+DataMint exposes a pytest plugin with deterministic fixtures for test suites:
+
+```python
+def test_rag_pipeline(synthetic_qa_dataset, adversarial_prompts):
+    assert synthetic_qa_dataset[0].question
+    assert adversarial_prompts[0].text
+```
+
+Available fixtures:
+
+- `synthetic_qa_dataset` -- five deterministic `QAPair` objects
+- `adversarial_prompts` -- five deterministic `AdversarialPrompt` objects
+
 ## Adversarial Categories
 
 | Category | Templates | Example |
